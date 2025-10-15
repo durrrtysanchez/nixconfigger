@@ -42,11 +42,11 @@
     libinput.enable = true;
     layout = "us";
     displayManager = {
-      defaultSession = "none+i3wm";
+      defaultSession = "none+i3";
     };
   };
 
-  services.xserver.windowManager.i3wm.enable = true;
+  services.xserver.windowManager.i3.enable = true;
 
 
   
