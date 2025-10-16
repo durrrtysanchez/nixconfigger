@@ -27,12 +27,12 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    font = "Lat2-Terminus16";
-    keyMap = "us";
-    useXkbConfig = true; # use xkb.options in tty.
-  };
+#  i18n.defaultLocale = "en_US.UTF-8";
+ # console = {
+  #  font = "Lat2-Terminus16";
+  #  keyMap = "us";
+   # useXkbConfig = true; # use xkb.options in tty.
+ # };
 
   # Enable the X11 windowing system.
   services.xserver = {
@@ -70,7 +70,7 @@
   };
 
   # List packages installed in system profile. To search, run:
-  $ nix search wget
+ # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
@@ -100,9 +100,17 @@
     htop
   ];
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
+  #FONTS
+  fonts = {
+    enableFontDir = true;
+    enableGhostscriptFonts = true;
+    fonts = with pkgs; [
+      jetbrains-mono
+      
+      fira-mono
+      inconsolata
+    ];
+  };
 
   #programs
   programs.fish.enable = true;
