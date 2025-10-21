@@ -49,7 +49,7 @@
   services.xserver.windowManager.i3.enable = true;
 
   # Enable sound.
-  hardware.pulseaudio.enable = true;
+ # hardware.pulseaudio.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.cuckboi = {
