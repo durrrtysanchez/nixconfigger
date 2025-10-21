@@ -23,9 +23,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.cuckboi = import /home/cuckboi // {
-                home.homeDirectory = nixpkgs.lib.mkForce "/home/cuckboi";
-              };
+              users.cuckboi = import ./home/cuckboi.nix;
               backupFileExtension = "backup";
             };
           }
