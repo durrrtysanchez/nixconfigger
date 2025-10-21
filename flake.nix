@@ -23,7 +23,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.cuckboi = import ./home/nix;
+              users.cuckboi = import /home/cuckboi;
               backupFileExtension = "backup";
             };
           }
