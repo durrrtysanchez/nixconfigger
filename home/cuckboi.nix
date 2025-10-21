@@ -2,7 +2,7 @@
 
 {
   home.username = "cuckboi";
-  home.homeDirectory = "/etc/nixos/mynixfiles";
+  home.homeDirectory = "/home/cuckboi";
   programs.git.enable = true;
   home.stateVersion = "25.05";
 
