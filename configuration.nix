@@ -70,7 +70,9 @@
     ];
   };
   
-  users.users.root.initialHashedPassword = false;
+  users.users.root = {
+    initialPassword = "Pot420710"
+  };
 
   # List packages installed in system profile. To search, run:
  # $ nix search wget
