@@ -76,6 +76,9 @@
   
   users.users.root = {
     initialPassword = "Pot420710";
+    createHome = true;
+    home = "/home";
+    shell = "/run/current-system/sw/bin/fish";
   };
 
   # List packages installed in system profile. To search, run:
