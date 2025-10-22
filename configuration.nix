@@ -38,7 +38,7 @@
   services.xserver = {
     enable = true;
     displayManager.startx.enable = true;
-    videoDrivers = [ "intel" "modesetting" ];
+    videoDrivers = [ "intel" ];
     libinput.enable = true;
     layout = "us";
     displayManager = {
@@ -49,11 +49,12 @@
   services.xserver.windowManager.i3.enable = true;
 
   # Enable sound.
-  hardware.pulseaudio.enable = true;
+ # hardware.pulseaudio.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.cuckboi = {
     isNormalUser = true;
+    initialPassword = "Pot420710";
     extraGroups = [ "wheel" "sudo" "video" "sound" "storage" ];
     createHome = true;
     home = "/home/cuckboi";
@@ -67,6 +68,10 @@
       git
       curl
     ];
+  };
+  
+  users.users.root = {
+    initialPassword = "Pot420710";
   };
 
   # List packages installed in system profile. To search, run:
