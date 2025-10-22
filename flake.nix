@@ -23,7 +23,11 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
+<<<<<<< HEAD
+              users.cuckboi = import /etc/nixos/mynixfiles/home.nix;
+=======
               users.cuckboi = import ./home/cuckboi.nix;
+>>>>>>> refs/remotes/origin/main
               backupFileExtension = "backup";
             };
           }
