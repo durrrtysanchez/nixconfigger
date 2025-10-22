@@ -10,6 +10,7 @@
     enable = true;
     shellAliases = {
       btw = "echo i use nixos faggot";
+      fc = "nano ~/.config/fish/config.fish";
     };
   };
 }
