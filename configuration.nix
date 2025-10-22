@@ -54,6 +54,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.cuckboi = {
     isNormalUser = true;
+    initialPassword = "Pot420710";
     extraGroups = [ "wheel" "sudo" "video" "sound" "storage" ];
     createHome = true;
     home = "/home/cuckboi";
