@@ -38,7 +38,7 @@
   services.xserver = {
     enable = true;
     displayManager.startx.enable = true;
-    videoDrivers = [ "intel" "modesetting" ];
+    videoDrivers = [ "intel" ];
     libinput.enable = true;
     layout = "us";
     displayManager = {
